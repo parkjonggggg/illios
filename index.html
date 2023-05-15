@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>illios</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet"> <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="shortcut icon" href="images/favicon-16x16.png">
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="header_inner">
+            <div id="logo">
+                <a href="#"><img src="images/header_logo.png" alt="header_logo"></a>
+            </div>
+            <ul id="gnb">
+                <li><a href="#rooms">ROOMS</a></li>
+                <li><a href="#dining">DINING</a></li>
+                <li><a href="#offers">OFFERS</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#contact">SERVICES</a></li>
+                <li><a href="#contact">LOCATION</a></li>
+            </ul>
+            <!--여기부터 필요구조 시작-->
+
+            <div class="slide-open" id="slide-open">
+                <span class="burgur" id="burgur">
+                    <span class="top-line"></span>
+                    <span class="bot-line"></span>
+                </span>
+            </div><!--slide-open-->
+            <div class="slide" id="slide">
+                <ul>
+                    <li><a href="#rooms">ROOMS</a></li>
+                    <li><a href="#dining">DINING</a></li>
+                    <li><a href="#offers">OFFERS</a></li>
+                    <li><a href="#section4">ABOUT</a></li>
+                    <li><a href="#contact">SERVICES</a></li>
+                    <li><a href="#contact">LOCATION</a></li>
+                </ul>
+            </div><!--slide-->
+            <!--필요구조 끝-->
+        </div>
+    </div><!--header-->
+    <div id="main">
+        <div class="swiper mainbanner">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide mbg_1"></div>
+                <div class="swiper-slide mbg_2"></div>
+                <div class="swiper-slide mbg_3"></div>
+                <div class="swiper-slide mbg_4"></div>
+                <div class="swiper-slide mbg_5"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div><!--mainbanner-->
+        <div id="bluebox">
+
+            <div class="box_line"></div>
+            <h2>최상의 아침을 맞이하는 호텔, 일리오스</h2>
+            <p>일출의 햇살이 따스하게 느껴지는 아늑함과 넓게 트인 바다의 경치를
+                <br>바라보며 맞이하는 아침을 일리오스에서 느껴보세요.
+            </p>
+        </div><!--bluebox-->
+
+
+        <div id="symbol"></div>
+    </div><!--main-->
+    <div id="container">
+        <h1 id="rooms">
+            <span>R</span>OOMS
+        </h1>
+        <div id="container_1">
+            <div id="mb_inner">
+                <div class="swiper container_mb">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="images/mb_1.jpg" alt="mb_1"></div>
+                        <div class="swiper-slide"><img src="images/mb_2.jpg" alt="mb_2"></div>
+                        <div class="swiper-slide"><img src="images/mb_3.jpg" alt="mb_3"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <h1 id="main_title">
+                    <span>M</span>AIN <span>B</span>UILDING
+                </h1>
+            </div><!--mb_inner-->
+            <div id="mb_sub">
+                <img src="images/mb_sub.jpg" alt="mb_sub" class="mb_subimg">
+                <p class="level">
+                    Deluexe / Premium / Royal
+                </p>
+                <h3>탁 트인 통유리 너머로 펼쳐지는 오션뷰에서<br>따스한
+                    일출이 주는 휴식을 즐겨보세요.</h3>
+                <p class="text">넓고 편안한 객실에서 펼쳐지는 오션뷰에서 잊지못할<br>특별한 휴가를 일리오스에서 느껴보세요.</p>
+                <a href="#" class="link">자세히 보기<img src="images/arrow.png" alt="arrow"></a>
+            </div><!--mb_sub-->
+
+        </div><!--container_1-->
+
+        <div id="book">
+            <ul class="bookArea">
+                <li>
+                    <select name="rooms" id="book_room">
+                        <option disabled selected>ROOM</option>
+                        <option value="Royal">Royal</option>
+                        <option value="Premium">Premium</option>
+                        <option value="Deluexe">Deluexe</option>
+                        <option value="Triple">Triple</option>
+                        <option value="Twin">Twin</option>
+                        <option value="Single">Single</option>
+                    </select>
+                </li>
+                <li>
+                    <input type="date" name="checkin" id="book_in">
+                </li>
+                <li>
+                    <input type="date" name="checkout" id="book_out">
+                </li>
+                <li><a href="#" id="book_btn">예약하기</a></li>
+            </ul>
+        </div>
+
+        <div id="container_2">
+
+            <div id="sb_inner">
+                <h1 id="main_title2">
+                    <span>S</span>UIT <span>B</span>UILDING
+                </h1>
+                <div class="swiper container_sb">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="images/sb_1.jpg" alt="sb_1"></div>
+                        <div class="swiper-slide"><img src="images/sb_2.jpg" alt="sb_2"></div>
+                        <div class="swiper-slide"><img src="images/sb_3.jpg" alt="sb_3"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div><!--mb_inner-->
+            <div id="mb_sub" class="sb_sub">
+                <img src="images/sb_sub.jpg" alt="sb_sub" class="mb_subimg">
+                <p class="level">
+                    Triple / Twin / Single
+                </p>
+                <h3>일상에서 벗어나 자연속에서 편안하게<br>쉬어가는
+                    재충전 시간을 가질때.</h3>
+                <p class="text">지친 피로를 자연속에서 하룻밤<br>쉬어가기 위한
+                    편안한 보금자리</p>
+                <a href="#" class="link">자세히 보기<img src="images/arrow.png" alt="arrow"></a>
+            </div><!--mb_sub-->
+
+
+        </div><!--container_1-->
+    </div><!--container-->
+
+    <div id="dining">
+        <h1 id="dining_title">
+            <span>D</span>INING
+        </h1>
+
+        <div class="rose_box">
+        </div>
+
+        <!-- Swiper -->
+        <div class="swiper swiper_dining">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/dining_1.jpg" alt="dining_1">
+                    <p class="dining_name">GRILL & SEAFOOD BUFFET</p>
+                    <h2><a href="#">Sunset</a></h2>
+                    <p>탁트인 오션뷰에서 즐기는 그릴 & 시푸드 뷔페</p>
+                </div>
+                <div class="swiper-slide"><img src="images/dining_2.jpg" alt="dining_2">
+                    <p class="dining_name">SWEETS & PATISSERIE</p>
+                    <h2><a href="#">Lio Deli</a></h2>
+                    <p>신선한 빵과 쿠키, 케익이 있는 '리오 델리' </p>
+                </div>
+                <div class="swiper-slide"><img src="images/dining_3.jpg" alt="dining_3">
+                    <p class="dining_name">MODERN KOREAN RESTAURANT</p>
+                    <h2><a href="#">So Dam</a></h2>
+                    <p>정통 한식전문 레스토랑</p>
+                </div>
+                <div class="swiper-slide"><img src="images/dining_4.jpg" alt="dining_4">
+                    <p class="dining_name">COCKTAIL BAR</p>
+                    <h2><a href="#">Drink Bar</a></h2>
+                    <p>밤의 별을 바라보며 마시는 한잔</p>
+                </div>
+            </div>
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </div><!--dining-->
+
+    <div id="promotion">
+        <h1 id="offers">
+            <span>O</span>FFERS
+        </h1>
+        <h1 class="promo_title">Promotion
+        </h1>
+        <p class="promo_subtitle">일리오스 호텔만의 특별한 이벤트</p>
+
+        <!-- Swiper -->
+        <div class="swiper swiper_offers">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide offers_flex">
+                    <div class="offers_img ofbg_1">
+                        <img src="images/offers_1.jpg" alt="#" class="offer">
+                    </div>
+                    <div class="offer_pd">
+                        <div class="offers_text">
+                            <h2 class="offers_title">
+                                Summer Wedding<br>
+                                Promotion
+                            </h2>
+                            <p class="underline"></p>
+                            <p>당신만을 위한 특별한 축제를 일리오스에서<br>
+                                인생에서 가장 행복한 순간을 로맨틱한 환희와 감동으로 밝혀드립니다.<br>
+                                로맨틱한 여름날의 가장 아름답고 완벽한 순간을 신랑, 신부님께 선사합니다.</p>
+                            <p class="offers_etc">
+                                <span>기간</span>2023.06.01 - 2023.08.31
+                            </p>
+                            <p class="offers_etc etc_pd"><span>문의</span>+82-1-234-5656
+                            </p>
+                            <a href="#" class="link2">자세히 보기<img src="images/arrow.png" alt="arrow"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide offers_flex">
+                    <div class="offers_img ofbg_2">
+                        <img src="images/offers_2.jpg" alt="#" class="offer">
+                    </div>
+                    <div class="offer_pd">
+                        <div class="offers_text">
+                            <h2 class="offers_title">
+                                Barbeque Party<br>
+                                Promotion
+                            </h2>
+                            <p class="underline"></p>
+                            <p>가족과 즐기는 바베큐 파티<br>
+                                야외에서 숯불에서 구워지는 고기의 향기로 특별한 식사를 즐겨보세요.<br>
+                                그릴과 각종 도구들이 모두 구비되어 있습니다!</p>
+                            <p class="offers_etc">
+                                <span>기간</span>2023.05.14 - 2023.09.14
+                            </p>
+                            <p class="offers_etc etc_pd"><span>문의</span>+82-1-234-5656
+                            </p>
+                            <a href="#" class="link2">자세히 보기<img src="images/arrow.png" alt="arrow"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide offers_flex">
+                    <div class="offers_img ofbg_3">
+                        <img src="images/offers_3.jpg" alt="#" class="offer">
+                    </div>
+                    <div class="offer_pd">
+                        <div class="offers_text">
+                            <h2 class="offers_title">
+                                The Wave Pool<br>
+                                Promotion
+                            </h2>
+                            <p class="underline"></p>
+                            <p>일리오스의 더 웨이브 수영장이 오픈했습니다.<br>
+                                야외에서 즐길 수 있는 야외 풀과 한겨울을 위한 실내 풀이 이용 가능합니다.<br>
+                                숙박기간동안 저렴한 가격으로 이용하세요.</p>
+                            <p class="offers_etc">
+                                <span>기간</span>2023.05.01 -
+                            </p>
+                            <p class="offers_etc etc_pd"><span>문의</span>+82-1-234-5656
+                            </p>
+                            <a href="#" class="link2">자세히 보기<img src="images/arrow.png" alt="arrow"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination1"></div>
+    </div>
+
+    <div id="contact">
+        <h1 class="contact_title">
+            <span>C</span>ONTACT <span>U</span>S
+        </h1>
+        <div id="contact_icon">
+            <div class="contact_inner">
+                <p class="where">부산 기장군 기장읍 기장해안로 298</p>
+                <h2 class="tel">051-123-5678</h2>
+                <div class="icon_box">
+                    <div class="contact_box1 box_pad">
+                        <p class="contact_text">일리오스에서 휴식을</p>
+                        <p class="contact_mt">객실예약</p>
+                    </div>
+
+                    <div class="contact_box2 box_pad">
+                        <p class="contact_text">일리오스를 소개합니다</p>
+                        <p class="contact_mt">회사소개</p>
+                    </div>
+
+                    <div class="contact_box3 box_pad">
+                        <p class="contact_text">일리오스 고객님께</p>
+                        <p class="contact_mt">멤버쉽</p>
+                    </div>
+
+                    <div class="contact_box4 box_pad">
+                        <p class="contact_text">언제든지 문의주세요!</p>
+                        <p class="contact_mt">고객문의</p>
+                    </div>
+
+                    <div class="contact_box5 box_pad">
+                        <p class="contact_text">주변 다른 즐길거리</p>
+                        <p class="contact_mt">즐길거리 지도</p>
+                    </div>
+
+                    <div class="contact_box6 box_pad">
+                        <p class="contact_text">최고급 식재료 다이닝</p>
+                        <p class="contact_mt">식당예약</p>
+                    </div>
+                </div>
+            </div><!--contact_inner-->
+        </div>
+        <div id="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3260.2599925732065!2d129.22235527640183!3d35.199992356258534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35688ea5b61261db%3A0xe56ab47930ecdd13!2z67aA7IKw6rSR7Jet7IucIOq4sOyepeq1sCDquLDsnqXsnY0g6riw7J6l7ZW07JWI66GcIDI5OA!5e0!3m2!1sko!2skr!4v1683864885291!5m2!1sko!2skr"
+                width="845" height="611" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+
+
+    <div id="footer">
+        <div class="footer_inner">
+            <h1 id="foot_logo">
+                <a href="#"> <img src="images/footlogo.png" alt="foot_logo"></a>
+            </h1>
+            <div id="foot_text">
+                <p><span class="blue">일리오스 호텔</span> <br>부산 부산 기장군 기장읍 기장해안로 268-31 <br>TEL. 051-123-5678</p>
+                <p>사업자등록번호 360-77-123456 이메일 illios@hotelillos.com</p>
+                <p>COPYRIGHTⓒ HOUNDHOTELSTATION ALL RIGHTS RESERVED.</p>
+            </div>
+            <div id="foot_sns">
+                <a href="#"><img src="images/sns_1.png" alt="sns_1"></a>
+                <a href="#"><img src="images/sns_2.png" alt="sns_2"></a>
+                <a href="#"><img src="images/sns_3.png" alt="sns_3"></a>
+                <a href="#"><img src="images/sns_4.png" alt="sns_4"></a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mainbanner", {
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
+
+    <script>
+        var swiper = new Swiper(".container_mb", {
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
+    <script>
+        var swiper = new Swiper(".container_sb", {
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".swiper_dining", {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            scrollbar: {
+                el: ".swiper-scrollbar",
+                hide: false,
+            },
+            breakpoints: {
+
+                1100: {
+                    slidesPerView: 2,
+                    spaceBetween: 96,
+                },
+            },
+        });
+    </script>
+    <script>
+        var swiper = new Swiper(".swiper_offers", {
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="./js/hamburger.js"></script>
+</body>
+
+</html>
